@@ -292,19 +292,20 @@ fun main(){
 ```kotlin
 // 값 설정
 fun main(){
-    qwe@for(i in 0..10){
-        for(j in 0..10){
-            if(i ==0 && j == 3){
-                break@qwe
-            }
-            println("$i, $j")
-        }
+    var a = Prs("awd", 23)
+
+    println("${a.birth} ${a.name}")
+    a.introduce()
+}
+
+class Prs(var name:String, val birth:Int){
+    fun introduce(){
+        println("$name $birth")
     }
 }
 
 출력:
-0, 0
-0, 1
-0, 2
+23 awd
+        awd 23
 ```  
 ### 
